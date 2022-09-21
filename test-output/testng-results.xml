@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T17:08:45 GST" name="Default suite" finished-at="2022-09-21T17:09:24 GST" duration-ms="38998">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T17:08:45 GST" name="Default test" finished-at="2022-09-21T17:09:24 GST" duration-ms="38998">
+      <class name="TPC.MaintenanceManagement">
+        <test-method signature="BrowserLaunchandLogin()[pri:0, instance:TPC.MaintenanceManagement@10d307f1]" started-at="2022-09-21T17:08:45 GST" name="BrowserLaunchandLogin" finished-at="2022-09-21T17:09:21 GST" duration-ms="36276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunchandLogin -->
+        <test-method signature="managevehiclelist()[pri:0, instance:TPC.MaintenanceManagement@10d307f1]" started-at="2022-09-21T17:09:21 GST" name="managevehiclelist" finished-at="2022-09-21T17:09:24 GST" duration-ms="2656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managevehiclelist -->
+      </class> <!-- TPC.MaintenanceManagement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

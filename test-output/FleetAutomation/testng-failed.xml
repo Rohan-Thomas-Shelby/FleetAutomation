@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FleetAutomation]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="TPC.ManageClient">
+        <methods>
+          <include name="client"/>
+        </methods>
+      </class> <!-- TPC.ManageClient -->
+      <class name="TPC.ManageAssistants">
+        <methods>
+          <include name="assistant"/>
+        </methods>
+      </class> <!-- TPC.ManageAssistants -->
+      <class name="TPC.ManageDriver">
+        <methods>
+          <include name="AddDriver"/>
+        </methods>
+      </class> <!-- TPC.ManageDriver -->
+      <class name="TPC.ManageVehicle">
+        <methods>
+          <include name="vehiclemodule"/>
+        </methods>
+      </class> <!-- TPC.ManageVehicle -->
+      <class name="TPC.LabourCategory">
+        <methods>
+          <include name="labourcat"/>
+        </methods>
+      </class> <!-- TPC.LabourCategory -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [FleetAutomation] -->
