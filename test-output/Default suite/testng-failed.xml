@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TPC.DVIR">
+      <class name="TPC.Legal">
         <methods>
-          <include name="dvir"/>
+          <include name="legal"/>
         </methods>
-      </class> <!-- TPC.DVIR -->
+      </class> <!-- TPC.Legal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
