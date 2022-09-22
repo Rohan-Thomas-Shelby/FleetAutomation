@@ -49,6 +49,74 @@ public class ManageBranches extends Commonclass{
 	  
 	  // Edit
 	  
+	  Thread.sleep(2000);
+	  List<WebElement> branchlist = driver.findElements(By.xpath("//tr[@class='row-odd']"));
+	  branchlist.size();
+	  for(int i=0; i< branchlist.size();)
+	  {
+		  branchlist.get(0).findElement(By.xpath("//div[@class='action-btn']")).click();
+		  break;
+	  }
+	  List<WebElement> actionlist = driver.findElements(By.xpath("//tbody//li"));
+	  actionlist.size();
+	  for(int j=0;j<actionlist.size();j++)
+	  {
+		  if(actionlist.get(j).getText().contains("Edit"))
+		  {
+			  actionlist.get(j).click();
+			  break;
+		  }
+	  }
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//span[normalize-space()='Update']")).click();
+	  
+	  // Activate Deactivate
+	  
+	  Thread.sleep(2000);
+	  List<WebElement> branchlist1 = driver.findElements(By.xpath("//tr[@class='row-odd']"));
+	  branchlist1.size();
+	  for(int i=0; i< branchlist1.size();)
+	  {
+		  branchlist1.get(0).findElement(By.xpath("//div[@class='action-btn']")).click();
+		  break;
+	  }
+	  List<WebElement> actionlist1 = driver.findElements(By.xpath("//tbody//li"));
+	  actionlist1.size();
+	  for(int j=0;j<actionlist1.size();j++)
+	  {
+		  if(actionlist1.get(j).getText().contains("Deactivate"))
+		  {
+			  actionlist1.get(j).click();
+			  break;
+		  }
+		  else if(actionlist1.get(j).getText().contains("Activate"))
+		  {
+			  actionlist1.get(j).click();
+			  break;
+		  }
+	  }
+	  
+	  //View Details
+	  
+	  Thread.sleep(2000);
+	  List<WebElement> branchlist2 = driver.findElements(By.xpath("//tr[@class='row-odd']"));
+	  branchlist2.size();
+	  for(int i=0; i< branchlist2.size();)
+	  {
+		  branchlist2.get(0).findElement(By.xpath("//div[@class='action-btn']")).click();
+		  break;
+	  }
+	  List<WebElement> actionlist2 = driver.findElements(By.xpath("//tbody//li"));
+	  actionlist2.size();
+	  for(int j=0;j<actionlist2.size();j++)
+	  {
+		  if(actionlist2.get(j).getText().contains("View Details"))
+		  {
+			  actionlist2.get(j).click();
+			  break;
+		  }
+	  }
+	  
 	  
 	  
   }
