@@ -117,17 +117,46 @@ public class TripandDispatch extends Commonclass {
 		
 		// Setting Trip Time
 		
-		WebElement timevalidation = driver.findElement(By.xpath("//p[normalize-space()='Please select valid timeslot For Tuesday']"));
-		String validation = timevalidation.getText();
-		String []validation1= validation.split("For");
-		String val= validation1[0].trim();
-		if(val.equalsIgnoreCase("Please select valid timeslot"))
+		WebElement timevalidation = driver.findElement(By.xpath("//*[@id=\"Add Place\"]/div/div[1]/div/div[2]/div[2]/div/p"));
+		if(timevalidation.isDisplayed())
 		{
 			driver.findElement(By.xpath("//body//div//div[@role='tabpanel']//div//div//div//div//div//div[3]//div[1]//div[1]//div[1]//div[1]//button[2]")).click();
 			
 		}
+		WebElement default_starthr= driver.findElement(By.xpath("//div[@class='col-5 pr-0 pl-mo']//output[@aria-label='Hours']"));
+		String  strthr =  default_starthr.getAttribute("aria-valuetext");
+		System.out.println(strthr);
+		int sthr =  Integer.parseInt(strthr);
+		WebElement default_endhr = driver.findElement(By.xpath("//div[@class='col-5 pr-0']//output[@aria-label='Hours']"));
+		String endhr = default_endhr.getAttribute("aria-valuetext");
+		int e_hr = Integer.parseInt(endhr);
 		
-		// Adding Pickup
+		// Time period 
+		
+		WebElement start_tp= driver.findElement(By.xpath("//body//div[@class='w-100 overflow-main']//div[@class='col-5 pr-0 pl-mo']//div[@role='group']//div[@role='group']//div[1]"));
+		String stp = start_tp.getText();
+		
+		if(sthr<=e_hr)
+		{
+			int hr_diff= Integer.valueOf(e_hr)- Integer.valueOf(sthr);
+			System.out.println(hr_diff);
+			for(int i=0; i<hr_diff-1;i++)
+			{
+				driver.findElement(By.xpath("//div[@class='col-5 pr-0']//div[@title='Hours']//button[@aria-label='Decrement']")).click();
+			}
+		}
+		else if (sthr<=e_hr && stp.equalsIgnoreCase("AM"))
+		{
+			int hr_diff= Integer.valueOf(e_hr)- Integer.valueOf(sthr);
+			for(int i=0; i<hr_diff-1;i++)
+			{
+				driver.findElement(By.xpath("//div[@class='col-5 pr-0']//div[@title='Hours']//button[@aria-label='Decrement']")).click();
+			}
+			driver.findElement(By.xpath("//body//div[@class='w-100 overflow-main']//div[@class='col-5 pr-0']//div[@role='group']//div[@role='group']//div[1]")).click();
+		}
+		
+		
+		/*// Adding Pickup
 		
 		driver.findElement(By.xpath("//span[normalize-space()='Add Pickup']")).click();
 		driver.findElement(By.xpath("//input[@placeholder='Search Passenger...']")).click();
@@ -220,7 +249,7 @@ public class TripandDispatch extends Commonclass {
 				break;
 			}
 			
-		}
+		}*/
 	
 		
 	}
