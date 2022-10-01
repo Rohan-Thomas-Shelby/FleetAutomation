@@ -17,8 +17,18 @@ public class TripandDispatch extends Commonclass {
 		
 		
 		driver.findElement(By.xpath("//lord-icon[@src='https://cdn.lordicon.com/gghbrdfg.json']")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//span[@class='add-btn-css']")).click();
+		Thread.sleep(2000);
+		WebElement addbutton= driver.findElement(By.xpath("//span[@class='add-btn-css']"));
+		WebDriverWait creation = new WebDriverWait(driver, Duration.ofSeconds(10));
+		creation.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='add-btn-css']")));
+		if(addbutton.isDisplayed())
+		{
+			addbutton.click();
+		}
+		else 
+		{
+			System.out.println("Error in loading Trip and Dispatch main page");
+		}
 		/*WebDriverWait createpage = new WebDriverWait(driver, Duration.ofSeconds(10));
 		createpage.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='label-on-border-box']//div[@class='options-list-icon']//div[3]//span[1]")));
 		
