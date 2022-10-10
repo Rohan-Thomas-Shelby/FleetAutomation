@@ -3,7 +3,22 @@
 <suite name="FleetAutomation">
   <test thread-count="5" name="Regression">
     <classes>
-     <class name="TPC.DVIR"/>
+    <class name="TPC.Commonclass"/>
+    <class name="TPC.ManageDriver"/>
+    <class name="TPC.ManageVehicle"/>
+    <class name="TPC.ManageClient"/>
+    <class name="TPC.TripandDispatch"/>
+    <class name="TPC.VendorManagement"/>
+    <class name="TPC.ManageAssistant"/>
+    <class name="TPC.RoleManagement"/>
+    <class name="TPC.SavedPlaces"/>
+    <class name="TPC.MaintenanceRule"/>
+    <class name="TPC.ViolationRule"/>
+    <class name="TPC.DVIR"/>
+    <class name="TPC.MaintenanceManagement"/>
+    <class name="TPC.ManageBranches"/>
+    <class name="TPC.ManageStation"/>
+    <class name="TPC.Legal"/>
     </classes>
   </test> <!-- Regression -->
 </suite> <!-- FleetAutomation -->

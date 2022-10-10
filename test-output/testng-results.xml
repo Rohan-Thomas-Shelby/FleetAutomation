@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-01T19:43:16 GST" name="Default suite" finished-at="2022-10-01T19:43:57 GST" duration-ms="40510">
+  <suite started-at="2022-10-10T14:53:37 GST" name="Default suite" finished-at="2022-10-10T14:54:38 GST" duration-ms="61358">
     <groups>
     </groups>
-    <test started-at="2022-10-01T19:43:16 GST" name="Default test" finished-at="2022-10-01T19:43:57 GST" duration-ms="40510">
-      <class name="TPC.TripandDispatch">
-        <test-method signature="BrowserLaunchandLogin()[pri:0, instance:TPC.TripandDispatch@10d307f1]" started-at="2022-10-01T19:43:17 GST" name="BrowserLaunchandLogin" finished-at="2022-10-01T19:43:51 GST" duration-ms="34484" status="PASS">
+    <test started-at="2022-10-10T14:53:37 GST" name="Default test" finished-at="2022-10-10T14:54:38 GST" duration-ms="61358">
+      <class name="TPC.Geofence">
+        <test-method signature="BrowserLaunchandLogin()[pri:0, instance:TPC.Geofence@429bffaa]" started-at="2022-10-10T14:53:37 GST" name="BrowserLaunchandLogin" finished-at="2022-10-10T14:54:29 GST" duration-ms="52312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunchandLogin -->
-        <test-method signature="trips()[pri:0, instance:TPC.TripandDispatch@10d307f1]" started-at="2022-10-01T19:43:51 GST" name="trips" finished-at="2022-10-01T19:43:57 GST" duration-ms="5989" status="PASS">
+        <test-method signature="geofence()[pri:0, instance:TPC.Geofence@429bffaa]" started-at="2022-10-10T14:54:29 GST" name="geofence" finished-at="2022-10-10T14:54:38 GST" duration-ms="8980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trips -->
-      </class> <!-- TPC.TripandDispatch -->
+        </test-method> <!-- geofence -->
+      </class> <!-- TPC.Geofence -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

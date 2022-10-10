@@ -29,7 +29,7 @@ public class TripandDispatch extends Commonclass {
 		{
 			System.out.println("Error in loading Trip and Dispatch main page");
 		}
-		/*WebDriverWait createpage = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait createpage = new WebDriverWait(driver, Duration.ofSeconds(10));
 		createpage.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='label-on-border-box']//div[@class='options-list-icon']//div[3]//span[1]")));
 		
 		// Selecting Passengers
@@ -102,7 +102,7 @@ public class TripandDispatch extends Commonclass {
 			}
 		}
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='AddDriverModal']//button[@aria-label='Close'][normalize-space()='Save']")).click();
+		driver.findElement(By.xpath("//div[@class='modal fade show']//button[@aria-label='Close'][normalize-space()='Save']")).click();
 		
 		// Select Vehicle
 		
@@ -123,7 +123,7 @@ public class TripandDispatch extends Commonclass {
 			}
 		}
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='AddVehicleModal']//button[@aria-label='Close'][normalize-space()='Save']")).click();*/
+		driver.findElement(By.xpath("//div[@id='AddVehicleModal']//button[@aria-label='Close'][normalize-space()='Save']")).click(); 
 		
 		// Setting Trip Time
 		
@@ -166,7 +166,7 @@ public class TripandDispatch extends Commonclass {
 		}
 		
 		
-		/*// Adding Pickup
+		// Adding Pickup
 		
 		driver.findElement(By.xpath("//span[normalize-space()='Add Pickup']")).click();
 		driver.findElement(By.xpath("//input[@placeholder='Search Passenger...']")).click();
@@ -259,7 +259,7 @@ public class TripandDispatch extends Commonclass {
 				break;
 			}
 			
-		}*/
+		} 
 	
 		
 	}

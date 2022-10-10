@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TPC.TripandDispatch">
+      <class name="TPC.Geofence">
         <methods>
-          <include name="trips"/>
+          <include name="geofence"/>
         </methods>
-      </class> <!-- TPC.TripandDispatch -->
+      </class> <!-- TPC.Geofence -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
